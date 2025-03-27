@@ -32,6 +32,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let voteData = { count: 0 };
 
+
+    
     form.onsubmit = (e) => {
         e.preventDefault();
         let votesInput = Number(document.getElementById("votes").value);
@@ -52,6 +54,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         form.reset();
     };
+
+
 
     resetBtn.onclick = () => {
         if (!selectedCharacter) return;
